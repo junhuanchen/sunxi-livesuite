@@ -1,4 +1,4 @@
-This repository contains the latest LiveSuit binary and supporting 
+This repository contains the latest LiveSuit binary and supporting
 kernel module.
 
 LiveSuit is a tool to flash Images to the NAND of Allwinner devices.
@@ -24,7 +24,7 @@ Then copy it over to to your kernel modules:
 # cp awusb.ko /lib/modules/`uname -r`/kernel/
 
 Load the module by running:
-# modprobe awusb
+# depmod -a && modprobe awusb
 
 Running LiveSuit.
 -----------------
